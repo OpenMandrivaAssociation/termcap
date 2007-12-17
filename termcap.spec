@@ -23,7 +23,6 @@ Obsoletes:	termfiles_sparc
 Provides:	termfiles_sparc
 %endif
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The termcap package provides the /etc/termcap file.  /etc/termcap is
