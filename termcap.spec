@@ -1,11 +1,10 @@
 %define	name	termcap
 %define	version	11.0.1
-%define	release	%mkrel 12
 
 Summary:	The terminal feature database used by certain applications
 Name:		%{name}
 Version:	%{version}
-Release:	%{release}
+Release:	%mkrel 13
 License:	none
 Group:		System/Libraries
 URL:		http://www.catb.org/~esr/terminfo/
