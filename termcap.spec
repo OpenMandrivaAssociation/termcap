@@ -4,7 +4,7 @@
 Summary:	The terminal feature database used by certain applications
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 17
+Release:	%mkrel 18
 License:	none
 Group:		System/Libraries
 URL:		http://www.catb.org/~esr/terminfo/
@@ -16,6 +16,8 @@ Patch2:		termcap-utf8.patch
 Patch3:		termcap-xtermX11R6.patch
 # (vdanen) 11.0.1-6mdk patch so Eterm is seen as a color-capable term
 Patch4:		termcap-Eterm.patch
+# (shikamaru) 11.0.1-17mdv add urxvt as well
+Patch5:		termcap-urxvt.patch
 
 %ifarch sparc
 Obsoletes:	termfiles_sparc
@@ -39,6 +41,7 @@ bzcat %{SOURCE0} > %{name}
 %patch2 -p0
 %patch3 -p0
 %patch4 -p0
+%patch5 -p0
 
 %build
 
