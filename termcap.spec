@@ -4,7 +4,7 @@
 Summary:	The terminal feature database used by certain applications
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 19
+Release:	%mkrel 20
 License:	none
 Group:		System/Libraries
 URL:		http://www.catb.org/~esr/terminfo/
