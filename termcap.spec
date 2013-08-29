@@ -1,10 +1,7 @@
-%define	name	termcap
-%define	version	11.0.1
-
 Summary:	The terminal feature database used by certain applications
-Name:		%{name}
-Version:	%{version}
-Release:	%mkrel 22
+Name:		termcap
+Version:	11.0.1
+Release:	23
 License:	none
 Group:		System/Libraries
 URL:		http://www.catb.org/~esr/terminfo/
@@ -20,11 +17,9 @@ Patch4:		termcap-Eterm.patch
 Patch5:		termcap-urxvt.patch
 
 %ifarch sparc
-Obsoletes:	termfiles_sparc
-Provides:	termfiles_sparc
+%rename	termfiles_sparc
 %endif
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The termcap package provides the /etc/termcap file.  /etc/termcap is
@@ -46,14 +41,9 @@ bzcat %{SOURCE0} > %{name}
 %build
 
 %install
-rm -rf %{buildroot}
 install -m644 %{name} -D %{buildroot}%{_sysconfdir}/%{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %config(noreplace) %{_sysconfdir}/%{name}
 
 
