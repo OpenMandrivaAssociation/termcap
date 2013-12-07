@@ -1,7 +1,7 @@
 Summary:	The terminal feature database used by certain applications
 Name:		termcap
 Version:	11.0.1
-Release:	23
+Release:	24
 License:	none
 Group:		System/Libraries
 URL:		http://www.catb.org/~esr/terminfo/
