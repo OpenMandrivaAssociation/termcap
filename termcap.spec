@@ -4,7 +4,7 @@ Version:	11.0.1
 Release:	35
 License:	none
 Group:		System/Libraries
-URL:		http://www.catb.org/~esr/terminfo/
+URL:		https://www.catb.org/~esr/terminfo/
 Source0:	http://www.ccil.org/~esr/terminfo/termtypes.tc.bz2
 Patch0:		termcap-linuxlat.patch
 Patch1:		termcap-xtermchanges.patch
